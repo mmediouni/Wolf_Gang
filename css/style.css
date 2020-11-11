@@ -1,0 +1,416 @@
+html{
+    font-size: 62.5%;
+}
+body{
+    max-width: 1500px;
+    font-size: 1.6rem;
+    background-image: url("../img/bg_body.svg");
+    margin: auto;
+    fill: currentColor;
+    background-color: #444444;
+}
+@font-face {
+    font-family: Bodega;
+    src: url("..//fonts/BodegaSans_Black.ttf");
+  }
+
+
+iframe{
+    width: 200px;
+    height: 100px;
+    float: right;
+}
+
+
+
+
+/*=============================
+ --------- header --------- 
+ =============================*/
+ #pw{
+     height: 50%;
+ }
+ header{
+    
+    background: linear-gradient(135deg, #f1f1f1 0%,#f1f1f1 50%,#f1f1f1 50%,#343434 50%,#343434 100%);
+    margin: auto;
+}
+ 
+ header nav{
+     margin: auto;
+     width: 80%;
+     font-size: 2.5rem;
+ }
+ header a{
+     display: block;
+     text-decoration: none;
+     color: white;
+     padding: 10px;
+     text-align: right;
+     font-family: Bodega;
+ }
+ 
+ header a:hover{
+    color: orange;
+}
+
+ header img{
+     float: left;
+     width: 19%;
+ }
+
+ /* #headerlinks a{
+    
+    text-align: right;
+    
+    margin-right: 0px;
+    padding-top: 0px;
+    
+ } */
+
+ /*=============================
+ --------- Main --------- 
+ =============================*/
+main{
+    max-width: 1025px;
+    width: 80%;
+    margin: auto;
+    
+}
+h1, h2{
+    text-transform: uppercase;
+    color: white;
+    font-family: Bodega;
+}
+h1{
+    text-align: center;
+    font-size: 4rem;
+}
+h2{
+    font-size: 3rem;
+    border-top: 1px solid gray;
+    border-left: 1px solid gray;
+    padding: 15px;
+}
+
+h3{
+    font-size: 2.5rem;
+    font-family: Bodega;
+}
+span{
+    color: orange;
+}
+
+p{
+    color: #66666A;
+}
+ /*=============================
+ --------- Section 1--------- 
+ =============================*/
+
+
+ /*=============================
+ --------- Section 2 --------- 
+ =============================*/
+ h3{
+     text-transform: uppercase;
+     color: orange;
+     border-bottom: 1px solid orange;
+     text-align: center;
+ }
+ #sec2 article{
+    display: inline-block;
+    box-sizing: border-box;
+    width: 22%;
+    background-color: white;
+    padding: 13px;
+ }
+
+ #sec2 article img{
+    width: 100%;
+    
+ }
+input{
+    color: white;
+    width: 100%;
+    padding: 15px;
+    background-color: orange;
+    border: 0px;
+}
+
+#moto1, #moto2 , #moto3{
+margin-right: 36px;
+}
+
+#sec2 p{
+    text-align: center;
+ }
+ /*=============================
+ --------- Section 3 --------- 
+ =============================*/
+ #sec3 article{
+    display: inline-block;
+    box-sizing: border-box;
+    width: 49%;
+    /* border: 2px solid red; */
+    padding: 10px;
+    vertical-align: top;
+ }
+ #sec3 p{
+    color: white;
+    font-size: 0.9em;
+}
+ video {
+    width: 100%;
+}
+#sec3 a{
+    padding: 30px;
+    color: white;
+    text-decoration: none;
+    font-size: 35px;
+ }
+
+ #sec3 a:hover{
+    color: orange;
+ }
+
+ /*=============================
+ --------- Footer --------- 
+ =============================*/
+
+ footer{
+    padding-top: 30px;
+    margin-top: 30px;
+    text-align: center;
+    font-size: smaller;
+    color: black;    
+    width: 100%;
+    box-shadow: 0px -2px 8px 0px rgba(0,0,0,0.6);
+    color: rgb(177, 177, 177);
+    padding-bottom: 30px;
+    
+
+}
+
+footer p{
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+footer img{
+    margin-top: 20px;
+    width: 40px;
+    
+}
+
+h4{
+    font-family: Bodega;
+    font-size: larger;
+    text-transform: uppercase;
+}
+
+footer small a:link,  footer small a:visited{
+    color:  #66666A;
+    /* text-decoration: none; */
+  
+}
+
+ul li{
+    /* border-bottom: 1px solid rgb(177, 177, 177); */
+    text-align: center;
+    list-style-type: none;
+    display: inline-block;
+    padding-right: 10px;
+}
+
+ul li a{
+    text-decoration: underline;
+    color:  #66666A;
+}
+footer small p{
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+
+
+/* ########################################################
+######################## Responsive #######################
+########################################################### */
+/**********Desktop*********************/
+@media screen and (min-width:1024px)
+{
+    #sec0{
+        display: none;
+    }
+
+    #ulbr{
+        display: none;
+    }
+
+}
+
+/**********Mobile*********************/
+@media screen and (max-width:767px)
+{
+    body{
+        /* max-width: 767px; */
+        color: red;
+    }
+    #sec2{
+        display: none;
+    }
+
+    header{
+        
+        background: linear-gradient(135deg, rgba(241,241,241,1) 0%,rgba(255,255,255,1) 50%,rgba(52,52,52,1) 50%,rgba(52,52,52,1) 100%); 
+        margin: auto;
+    }
+
+    header img{
+        display: inline-block;
+        /* float: left; */
+        width: 100px;
+    }
+    footer{
+        box-shadow: 0px 3px 26px -8px rgba(0,0,0,0.75);
+        max-width: 1025px;
+        width: 80%;
+        margin: auto;
+    }
+
+    #sec3 article{
+        display: block;
+        box-sizing: border-box;
+        width: 100%;
+        /* border: 2px solid red; */
+        padding: 10px;
+        
+    }
+    #sec3 p{
+        text-align: center;
+    }
+
+    
+#sec3 article div a{
+    display: block;
+    padding: 15px 100px;
+    text-align: center;
+    margin: auto;
+    
+    
+}
+
+#sec3 article div a:hover{
+    color: orange;
+}
+main{
+    
+    width: 90%;
+    margin: 0 auto;
+    
+}
+
+
+
+#moto1,#moto2 ,#moto3{
+    margin-right: 0px;
+    padding: 4px;
+}
+
+footer small p{
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+#ul{
+    display: none;
+
+}
+#ulbr{
+    display: block;
+
+}
+
+}
+
+
+
+/*****************************************Tablette*********************************/
+@media screen and (min-width:768px) and (max-width:1023px)
+{
+    body{
+        /* max-width: 767px; */
+    }
+    #sec2{
+        display: none;
+    }
+
+    header{
+        width: 90%;
+        background: linear-gradient(135deg, rgba(241,241,241,1) 0%,rgba(255,255,255,1) 50%,rgba(52,52,52,1) 50%,rgba(52,52,52,1) 100%); 
+        margin: auto;
+    }
+
+    header img{
+        display: inline-block;
+        /* float: left; */
+        width: 100px;
+    }
+    footer{
+        box-shadow: 0px 3px 26px -8px rgba(0,0,0,0.75);
+        max-width: 1025px;
+        width: 80%;
+        margin: auto;
+    }
+
+    #sec3 article{
+        display: block;
+        box-sizing: border-box;
+        width: 100%;
+        /* border: 2px solid red; */
+        padding: 10px;
+        
+    }
+    #sec3 p{
+        text-align: center;
+    }
+
+    
+#sec3 article div a{
+    display: block;
+    padding: 15px 100px;
+    text-align: center;
+    margin: auto;
+    
+    
+}
+
+#sec3 article div a:hover{
+    color: orange;
+}
+main{
+    
+    width: 90%;
+    margin: 0 auto;
+    
+}
+
+
+
+#moto1,#moto2 ,#moto3{
+    margin-right: 0px;
+    padding: 4px;
+}
+
+footer small p{
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+#ulbr{
+    display: none;
+
+}
+
+}
